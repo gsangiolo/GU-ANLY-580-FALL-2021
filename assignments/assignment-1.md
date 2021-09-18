@@ -26,10 +26,34 @@ To submit this assignment, either enter your answers directly in the `assignment
 1. (10 pts) Establish the [convexity](https://en.wikipedia.org/wiki/Convex_function) of the following functions, showing any necessary derivation steps.
 
     a. $f(x) = x^{2}$
+    
+       $f'(x) = {2}x$
+       
+       $f"(x) = {2}$
+       
+       $2 > 0$, therefore f(x) is always Concave Up (Concave Up on the set of all real numbers)
 
     b. $f(x) = \ln(x)$
+    
+       $f'(x) = \frac{1}{x}$
+       
+       $f"(x) = \frac{-1}{x^{2}}$
+       
+       $\frac{-1}{x^{2}} < 0$ when x > 0, therefore f(x) is Concave Down on the set of x > 0 (ln(x) only exists in the domain x > 0)
 
     c. $f(x) = \frac{1}{1 + e^{-x}}$
+       
+       $f'(x) = -\frac{1}{1 + e^{-x}} * e^{-x} * -{1}$
+       
+       $f'(x) = \frac{e^{-x}}{1 + e^{-x}}$
+       
+       $f"(x) = -e^{-x} * f(x) + e^{-x} * f'(x)$
+       
+       $f"(x) = f'(x) * (-{1} + e^{-x})$
+       
+       $f"(x) = \frac{e^{-x}(e^{-x}-{1})}{{1} + e^{-x}}$
+       
+       When $e^{-x} < {1}$, f"(x) < 0, and the f(x) is Concave Down. When $e^{-x} > {1}$, f(x) is Concave Up (inflection when e^{-x} == 1)
 
     *Hint: convexity is non binary, some functions are neither convex nor concave, some are convex/concave over finite intervals etc..* 
 
