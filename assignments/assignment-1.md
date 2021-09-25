@@ -72,6 +72,8 @@ To submit this assignment, either enter your answers directly in the `assignment
        $\text{var}(X) = \frac{{\theta^{2}}{3}} - \frac{{\theta}{{2}}}$
 
     c. $H(X)$
+       $H(X) = \text{Integral f(x)} * \log{\frac{{1}{f(x)}}} * dx = \text{Integral} \frac{{1}{\theta}} * \log{\theta} * dx \text{from 0 to theta}$ Since f(x) is always the same (1/theta) in a uniform distribution!
+       $H(X) = \frac{{\log{\theta}}{\theta}} * \text{Integral from 0 to theta } dx = \frac{{\log{\theta}}{\theta}} * \theta  = \log{\theta}$
 
     *Note:* $H(X)$ *denotes the [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of* $X$. 
 
