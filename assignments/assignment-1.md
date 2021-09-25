@@ -16,9 +16,9 @@ To submit this assignment, either enter your answers directly in the `assignment
 
 **Grade**: 10% (100 pts)
 
-**Your name**:
+**Your name**: George Sangiolo
 
-**Your NET ID**:
+**Your NET ID**: gss59
 
 #
 ## Problems
@@ -80,10 +80,28 @@ To submit this assignment, either enter your answers directly in the `assignment
 
 3. (40 pts) Given $M$ independently drawn samples of $X$ from (2), $x_{1}, ..., x_{M}$, compute the [maximum likelihood estimate](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation) of $\theta$, $\hat{\theta}$. Please show the steps to arrive at this answer.
 
+       $f(x) = \frac{{1}{\theta}}$ from question 2
+       $L(x) = f(x1) * f(x2) * f(x3)$ ... $ f(xn-1) * f(xn)$
+       $f(x)$ is ALWAYS $frac{{1}{\theta}}$ because of the uniform distribution (over 0 <= x <= theta, else 0)
+       Therefore, $L(x) = \frac{{1}{\theta}}^n = {\theta}^{-n}$
+       The derivative is: $\frac{{dL}{dx}} = -n * {\theta}^{-n-1} = 0$
+       This is always decreasing, so it is minimized at n = infinity, or at $\theta = xn$
 
-3. (20 pts) Imagine you are given the choice of three sound proof doors: Behind one door is \$1M cash; behind the others, crickets. After making your choice (but not observing the outcome), an omnicient host reveals crickets behind one of the other doors. The host then asks you the following: *Would you like to switch doors?* Using [Bayes' Rule](https://en.wikipedia.org/wiki/Bayes%27_theorem), determine whether or not you should switch doors to maximize your chances of winning $1M.
 
+4. (20 pts) Imagine you are given the choice of three sound proof doors: Behind one door is \$1M cash; behind the others, crickets. After making your choice (but not observing the outcome), an omnicient host reveals crickets behind one of the other doors. The host then asks you the following: *Would you like to switch doors?* Using [Bayes' Rule](https://en.wikipedia.org/wiki/Bayes%27_theorem), determine whether or not you should switch doors to maximize your chances of winning $1M.
 
-4. (20 pts) Consider the covariance matrix, $\Sigma \in \mathbb{R}^{N \times N}$ of a random vector $X \in \mathbb{R}^{N}$. Show that $\Sigma$ is a [positive semidefnite matrix](https://en.wikipedia.org/wiki/Definite_matrix). What are some of the implications of $\Sigma$ being PSD?
+      Always switch the doors!
+      If: Probability for each door having the prize = 1/3 (each door has an equal chance)
+      Select 1 door at random (say door 1)
+      Then: Monty Hall removes door 3 as a non-prize door
+      Intuitively, switch vs stay should be 1/2 chance of winning
+      BUT the door 2 takes door 3's probability, giving you a 2/3 chance of winning the prize if you switch
+      At a high level, there are only 2 options: 1. You pick the correct door. 2. The correct door is one of the other two doors. Option 1 has a 1/3 chance intuitively, leaving option 2 with a 2/3 chance.
+      Now with Bayes' rule:
+      P(Door 2 Prize | Door 3 Removed) = P(Door 3 Removed | Door 2 Prize) /* really the probability of Door 3 being removed, which is guaranteed given it's a dud door. In this case, the prize IS behind door 2 (or more generally, the door that was neither chosen nor removed) */ * P(Door 2 Prize) / (P(Door 3 Removed | Prize in Door 1) * P(Prize in Door 1) + P(Door 3 Removed | Prize in Door 2) * P(Prize in Door 2) + P(Door 3 Removed | Prize in Dor 3))
+      P(Door 2 Prize | Door 3 Removed) = 1 * (1/3) / ((1/2) * (1/3) + (1) * (1/3) + (0) * (1/3))
+      P(Door 2 Prize | Door 3 Removed) = 2/3
+
+5. (20 pts) Consider the covariance matrix, $\Sigma \in \mathbb{R}^{N \times N}$ of a random vector $X \in \mathbb{R}^{N}$. Show that $\Sigma$ is a [positive semidefnite matrix](https://en.wikipedia.org/wiki/Definite_matrix). What are some of the implications of $\Sigma$ being PSD?
 
     *Note: The covariance of $X$ is defined as $\Sigma = \mathbb{E}_{X}\big[ \big( X - \mathbb{E}_{X}[X] \big)\big( X - \mathbb{E}_{X}[X] \big)^{T} \big]$*
