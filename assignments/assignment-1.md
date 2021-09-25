@@ -62,10 +62,14 @@ To submit this assignment, either enter your answers directly in the `assignment
 2. (10 pts) Consider a continuous random variable $X$ that is drawn from a [uniform distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution) between the values $0$ and $\theta$. Please compute the following, showing each derivation step:
 
     a. $\mathbb{E}_{X}[X]$
-    $\mathbb{E}_{X}[X]$ = Expected Value of X. f(x) = {$\frac{{1}/{\theta}$ for 0 <= x <= $\theta$, 0 everywhere else}
-    $\mathbb{E}_{X}[X]$ = Integral of x * f(x)dx from 0 to $\theta$ = Integral of $\frac{{x * dx}{\theta}} = \frac{{x^{2}}{{2} * \theta}}$ from 0 to $\theta$ = $\frac{{\theta^{2}}{{2} * \theta}} = \frac{{\theta}{{2}}}$
+       $\mathbb{E}_{X}[X]$ = Expected Value of X. f(x) = {$\frac{{1}/{\theta}$ for 0 <= x <= $\theta$, 0 everywhere else}
+       $\mathbb{E}_{X}[X]$ = Integral of x * f(x)dx from 0 to $\theta$ = Integral of $\frac{{x * dx}{\theta}} = \frac{{x^{2}}{{2} * \theta}}$ from 0 to $\theta$ = $\frac{{\theta^{2}}{{2} * \theta}} = \frac{{\theta}{{2}}}$
 
-    b. $\text{var}(X)$ 
+    b. $\text{var}(X)$
+       $\text{var}(X) = \mathbb{E}_{X^2}[X^2] - \mathbb{E}_{X}[X]$
+       $\mathbb{E}_{X^2}[X^2] = $ Integral of x^2 * f(x)dx from 0 to $\theta$ = Integral of $\frac{{x^{2} * dx}{\theta}} = \frac{{x^{3}}{{3} * \theta}}$ from 0 to $\theta$ = $\frac{{\theta^{3}}{{3} * \theta}} = \frac{{\theta^{2}}{3}}$
+       $\mathbb{E}_{X}[X] = \frac{{\theta}{{2}}}$ (Above)
+       $\text{var}(X) = \frac{{\theta^{2}}{3}} - \frac{{\theta}{{2}}}$
 
     c. $H(X)$
 
