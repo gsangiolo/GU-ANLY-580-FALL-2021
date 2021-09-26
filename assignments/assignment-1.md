@@ -104,4 +104,10 @@ To submit this assignment, either enter your answers directly in the `assignment
 
 5. (20 pts) Consider the covariance matrix, $\Sigma \in \mathbb{R}^{N \times N}$ of a random vector $X \in \mathbb{R}^{N}$. Show that $\Sigma$ is a [positive semidefnite matrix](https://en.wikipedia.org/wiki/Definite_matrix). What are some of the implications of $\Sigma$ being PSD?
 
+      $\Sigma = \mathbb{E}_{X}[( X - \mathbb{E}_{X}[X])( X - \mathbb{E}_{X}[X])^{T}$
+      $X^{T} {\Sigma} {X} = X^{T} \mathbb{E}_{X}[( X - \mathbb{E}_{X}[X])( X - \mathbb{E}_{X}[X])^{T} {X} = X^{T} \frac{{1}{N}}\text{Sum from 0 to N } {( X - \mathbb{E}_{X}[X])( X - \mathbb{E}_{X}[X])^{T}} {X}$
+      $= \frac{{1}{N}}\text{Sum of } {X^{T} ( X - \mathbb{E}_{X}[X])( X - \mathbb{E}_{X}[X])^{T} {X}} = \frac{{1}{N}}\text{Sum from 0 to N } (( X - \mathbb{E}_{X}[X])^{T} {X} )^{2}}$
+      Sum of anything squared is >= 0, therefore it is a Positive Semidefinite Matrix
+      
+
     *Note: The covariance of $X$ is defined as $\Sigma = \mathbb{E}_{X}\big[ \big( X - \mathbb{E}_{X}[X] \big)\big( X - \mathbb{E}_{X}[X] \big)^{T} \big]$*
