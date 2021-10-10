@@ -14,9 +14,9 @@ To submit this assignment, either enter your answers directly in the `assignment
 
 **Grade**: 10% (100 pts)
 
-**Your name**:
+**Your name**: George Sangiolo
 
-**Your NET ID**:
+**Your NET ID**: gss59
 
 #
 ## Problems
