@@ -105,5 +105,8 @@ print(trigram_log_probs)
     - all examples are drawn independently
 
     Which of these qualifying assumptions does word2vec break (many other LMs do too, as it turns)?
+    
+    First of all, examples are not drawn independently. Word2Vec is powerful because it doesn't assume each word or n-gram is independent, but rather takes context into account when creating vectors to represent each token. This is also apparent whenever any part of speech processing is done on a language model, as context is needed to discern between "lead" and "lead" for example.
+    Word2Vec also takes information from the entire training corpus, not just from each individual example. This allows for a robust, context-driven language model, but it means that all examples are not drawn from the same distribution!
 
     *Hint: We make the Markov assumption in language modeling out of necessity; this doesn't mean that it reflects reality!*
