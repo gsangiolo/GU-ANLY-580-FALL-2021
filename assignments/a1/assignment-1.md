@@ -12,7 +12,7 @@ To submit this assignment, either enter your answers directly in the `assignment
 **Due dates**:
  
  - Section I: Sep 26
- - Section II: Sep 26
+ - Section II: Sep 22
 
 **Grade**: 10% (100 pts)
 

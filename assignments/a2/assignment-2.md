@@ -65,7 +65,6 @@ extra_tokens = ['START', 'STOP']
 trigram_counts = {}
 bigram_counts = {}
 
-
 for sentence in corpus:
     words = [extra_tokens[0]] + [extra_tokens[0]] + sentence.split() + [extra_tokens[1]]
     bigrams = tuple(nltk.bigrams(words))
