@@ -32,6 +32,8 @@ This command will produce a `results.json` file containing the WER and CER metri
 
 It did a really great job transcribing my voice! I speak fairly quietly and blur my words together, so I was surprised to see how well it caught a lot of the syllables. I can see some errors where words blended together or "schwa"s were interpreted with the wrong vowel, but overall it's great!
 
+Note: this may have actually failed to write the transcription...I got a CPU out of memory error, but I initially figured it had worked anyways because there was the audio transcription file...I will try again, but my computer may not be cut out for this.
+
 2. Why is the character level error rate lower than at the word level?
 
 I think that has to do with things like accents, mumbley speech, and some uncertainty when interpreting "schwa" sounds (things like "eh" or "uh"). For example, when I said "to test", it was transcribed as one word "totest". 
