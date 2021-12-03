@@ -30,9 +30,9 @@ This command will produce a `results.json` file containing the WER and CER metri
 
 1. How would you grade the models transcriptions of your voice (without considering WER)?
 
-It did a really great job transcribing my voice! I speak fairly quietly and blur my words together, so I was surprised to see how well it caught a lot of the syllables. I can see some errors where words blended together or "schwa"s were interpreted with the wrong vowel, but overall it's great!
+It did a really great job transcribing my voice! I speak fairly quietly and blur my words together, so I was surprised to see how well it caught a lot of the syllables. I can see some errors where words blended together or "schwa"s were interpreted with the wrong vowel, but overall it works surprisingly well!
 
-Note: this may have actually failed to write the transcription...I got a CPU out of memory error, but I initially figured it had worked anyways because there was the audio transcription file...I will try again, but my computer may not be cut out for this.
+Just for fun, I also tried recording myself a second time with a slight accent, and it was clearly much worse at transcribing it!
 
 2. Why is the character level error rate lower than at the word level?
 
