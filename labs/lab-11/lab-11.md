@@ -30,8 +30,12 @@ This command will produce a `results.json` file containing the WER and CER metri
 
 1. How would you grade the models transcriptions of your voice (without considering WER)?
 
+It did a really great job transcribing my voice! I speak fairly quietly and blur my words together, so I was surprised to see how well it caught a lot of the syllables. I can see some errors where words blended together or "schwa"s were interpreted with the wrong vowel, but overall it's great!
+
 2. Why is the character level error rate lower than at the word level?
+
+I think that has to do with things like accents, mumbley speech, and some uncertainty when interpreting "schwa" sounds (things like "eh" or "uh"). For example, when I said "to test", it was transcribed as one word "totest". 
 
 3. Are the models errors primarily on the word level, or is it missing phonetic sounds all together? Given this assessment, if you had to improve this model, would you focus primarily on the acoustic model or the language model?
 
-
+The errors that I notice are primarily at word level -- generally spelling fluctuations or combining two words together (likely because I slur my speech slightly). If I had to improve the model, I might focus on the language model to select words that make sense from combined ones. However, the first improvement that I would make is in the microphone and the speaker, to try enunciating better!
